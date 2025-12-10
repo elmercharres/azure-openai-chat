@@ -10,8 +10,10 @@ const ChatMessage: React.FC<Props> = ({ message }) => {
 
   return (
     <div
-      className={`p-3 rounded-lg max-w-[80%] ${
-        isUser ? "bg-blue-500 text-white self-end" : "bg-gray-200 text-gray-800"
+      className={`p-4 rounded-xl max-w-[80%] ${
+        isUser 
+          ? "bg-warm text-white self-end rounded-br-none" 
+          : "bg-darkbg-secondary text-white self-start rounded-bl-none border border-darkbg-panel"
       }`}
       style={{ alignSelf: isUser ? "flex-end" : "flex-start" }}
     >
